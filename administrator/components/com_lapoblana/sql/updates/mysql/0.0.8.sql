@@ -1,0 +1,1 @@
+ALTER TABLE `#__productslp` ADD COLUMN `progress` varchar(50) NULL;
