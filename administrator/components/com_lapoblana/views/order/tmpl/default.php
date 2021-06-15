@@ -6,10 +6,11 @@ jimport('joomla.filesystem.file');
 jimport('joomla.filesystem.folder');
 //JHTML::_('behavior.formvalidation');
 
-include_once JPATH_ADMINISTRATOR . DS . 'components' . DS . 'com_lapoblana' . DS . 'common' . DS . 'KoolControls' . DS . 'KoolAjax' . DS . 'koolajax.php';                                
-include_once JPATH_ADMINISTRATOR . DS . 'components' . DS . 'com_lapoblana' . DS . 'common' . DS . 'KoolControls' . DS . 'KoolCalendar' . DS . 'koolcalendar.php';        
+include_once JPATH_ADMINISTRATOR . DIRECTORY_SEPARATOR . 'components' . DIRECTORY_SEPARATOR . 'com_lapoblana' . DIRECTORY_SEPARATOR . 'common' . DIRECTORY_SEPARATOR . 'KoolControls' . DIRECTORY_SEPARATOR . 'KoolAjax' . DIRECTORY_SEPARATOR . 'koolajax.php';                                
+include_once JPATH_ADMINISTRATOR . DIRECTORY_SEPARATOR . 'components' . DIRECTORY_SEPARATOR . 'com_lapoblana' . DIRECTORY_SEPARATOR . 'common' . DIRECTORY_SEPARATOR . 'KoolControls' . DIRECTORY_SEPARATOR . 'KoolCalendar' . DIRECTORY_SEPARATOR . 'koolcalendar.php';        
 $koolajax->scriptFolder = JURI::root().'administrator/components/com_lapoblana/common/KoolControls/KoolAjax';
-include_once JPATH_ADMINISTRATOR . DS . 'components' . DS . 'com_lapoblana' . DS . 'common' . DS . 'KoolControls' . DS . 'KoolGrid' . DS . 'koolgrid.php'; 
+include_once JPATH_ADMINISTRATOR . DIRECTORY_SEPARATOR . 'components' . DIRECTORY_SEPARATOR . 'com_lapoblana' . DIRECTORY_SEPARATOR . 'common' . DIRECTORY_SEPARATOR . 'KoolControls' . DIRECTORY_SEPARATOR . 'KoolGrid' . DIRECTORY_SEPARATOR . 'koolgrid.php'; 
+include_once JPATH_ADMINISTRATOR . DIRECTORY_SEPARATOR . 'components' . DIRECTORY_SEPARATOR . 'com_lapoblana' . DIRECTORY_SEPARATOR . 'common' . DIRECTORY_SEPARATOR . 'KoolControls' . DIRECTORY_SEPARATOR . 'KoolGrid' . DIRECTORY_SEPARATOR . 'ext'. DIRECTORY_SEPARATOR .'datasources'. DIRECTORY_SEPARATOR .'MySQLiDataSource.php';
 $base = JPATH_SITE.'/administrator/components/com_lapoblana/common/KoolControls/KoolGrid/localization/es.xml';     
 $calLangueaje = JPATH_SITE.'/administrator/components/com_lapoblana/common/KoolControls/KoolCalendar/localization/es.xml';     
 
@@ -60,7 +61,7 @@ $calD->Localization->Load($calLangueaje);
 $calD->Init();
 $calD->Value = ($dateEstimated!='') ? date("d/m/Y", strtotime($dateEstimated)) :$dateC;
 
-Jview::loadHelper('lapoblanahp');                
+JViewLegacy::loadHelper('lapoblanahp');                
 //if($this->id!=0){ 
     $orderN = ($orderNum!='') ? $orderNum : $this->id;
     //obtener todos los productos relacionados al la orden    

@@ -5,7 +5,7 @@ defined('_JEXEC') or die('Restricted Access');
 JHtml::_('behavior.tooltip');
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_lapoblana&view=catdrawings'); ?>" method="post" name="adminForm">
-	<table class="adminlist">
+	<table class="table table-striped">
             <thead>
                 <tr>
                     <th width="5">

@@ -11,14 +11,14 @@ class LapoblanaControllerMassive extends JControllerForm {
         jimport('joomla.filesystem.file');
         jimport('joomla.filesystem.folder');        
         set_include_path(get_include_path() . PATH_SEPARATOR . '../../../Classes/');        
-        include_once JPATH_ADMINISTRATOR.DS.'components'.DS.'com_lapoblana'.DS.'common'.DS.'Classes'.DS.'PHPExcel'.DS.'IOFactory.php';
+        include_once JPATH_ADMINISTRATOR.DIRECTORY_SEPARATOR.'components'.DIRECTORY_SEPARATOR.'com_lapoblana'.DIRECTORY_SEPARATOR.'common'.DIRECTORY_SEPARATOR.'Classes'.DIRECTORY_SEPARATOR.'PHPExcel'.DIRECTORY_SEPARATOR.'IOFactory.php';
         
         $filename = str_replace(' ', '', $_FILES['nameFile']['name']);
         $fileTempPath = $_FILES['nameFile']['tmp_name'];       
         $ext = end(explode(".", $filename));        
         
         if($ext=='xls' || $ext=='xlsx'):            
-            $uploadPath = JPATH_SITE.DS.'media'.DS.'com_lapoblana'.DS.'upload_files_xls'.DS.$filename;                           
+            $uploadPath = JPATH_SITE.DIRECTORY_SEPARATOR.'media'.DIRECTORY_SEPARATOR.'com_lapoblana'.DIRECTORY_SEPARATOR.'upload_files_xls'.DIRECTORY_SEPARATOR.$filename;                           
                                                         
             if(JFile::upload($fileTempPath, $uploadPath)){                                                                    
            //ruta del archivo temporal
@@ -128,7 +128,7 @@ class LapoblanaControllerMassive extends JControllerForm {
                         }                                                                        
                     }
 
-                    $uploadPathImg = JPATH_SITE.DS.'media'.DS.'com_lapoblana'.DS.'upload_files_img'.DS;                                           
+                    $uploadPathImg = JPATH_SITE.DIRECTORY_SEPARATOR.'media'.DIRECTORY_SEPARATOR.'com_lapoblana'.DIRECTORY_SEPARATOR.'upload_files_img'.DIRECTORY_SEPARATOR;                                           
 
                     //Recorre todas las filas para insertar en ta labla de detalles de la orden que son productos relacionados
                     for ($i = 2; $i <= $totalCells; $i++) {                                                                                                                        

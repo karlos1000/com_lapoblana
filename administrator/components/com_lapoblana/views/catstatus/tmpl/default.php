@@ -5,15 +5,15 @@ defined('_JEXEC') or die('Restricted Access');
 JHtml::_('behavior.tooltip');
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_lapoblana&view=catstatus'); ?>" method="post" name="adminForm">
-	<table class="adminlist">
+	<table class="table table-striped">
             <thead>
                 <tr>
                     <th width="5">
                         <?php echo JText::_('id'); ?>
                     </th>
                     <th width="20">
-                        <?php echo JText::_('Sel'); ?>                                                  
-                    </th>			
+                        <?php echo JText::_('Sel'); ?>
+                    </th>
                     <th>
                         <?php echo JText::_('Nombre Estatus'); ?>
                     </th>
@@ -36,8 +36,8 @@ JHtml::_('behavior.tooltip');
                                 <?php echo $item->statusName; ?>
                             </a>
                         </td>
-                        <td class="center">                            
-                            <?php echo JHtml::_('jgrid.published', $item->active, $i, 'catstatus.',  'cb'); ?>  
+                        <td class="center">
+                            <?php echo JHtml::_('jgrid.published', $item->active, $i, 'catstatus.',  'cb'); ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -47,7 +47,7 @@ JHtml::_('behavior.tooltip');
                     <td colspan="4"><?php echo $this->pagination->getListFooter(); ?></td>
                 </tr>
             </tfoot>
-		
+
 	</table>
 	<div>
 		<input type="hidden" name="task" value="" />

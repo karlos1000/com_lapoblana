@@ -24,7 +24,7 @@ $direction	= $this->escape($this->state->get('list.direction'));
 		</div>
 	</fieldset>
 
-	<table class="adminlist">
+	<table class="table table-striped">
 		<thead>
 			<tr>
 				<th class="title" width="20%">

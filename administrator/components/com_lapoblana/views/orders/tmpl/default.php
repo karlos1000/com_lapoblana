@@ -15,7 +15,7 @@ $direction	= $this->escape($this->state->get('list.direction'));
         <label>Todas las filas donde su columna cliente se encuentre vacía le falta asociar con un usuario de joomla.</label>
         <ul>
             <li>Solo presioné el vínculo de número de orden ó seleccioné la fila y pulse editar.</li>
-            <li>De clic en el botón "Buscar cliente" dentro de la vista de edición para asociarlo.</li>                
+            <li>De clic en el botón "Buscar cliente" dentro de la vista de edición para asociarlo.</li>
         </ul>
 </div>
 <form action="<?php echo JRoute::_('index.php?option=com_lapoblana&view=orders'); ?>" method="post" name="adminForm" id="adminForm">
@@ -30,38 +30,38 @@ $direction	= $this->escape($this->state->get('list.direction'));
         <button type="button" onclick="document.id('filter_search').value='';this.form.submit();">
                 <?php echo JText::_('JSEARCH_FILTER_CLEAR'); ?></button>
     </div>
-    <table class="adminlist">
+    <table class="table table-striped">
         <thead>
             <tr>
-                <th width="5">                    
-                    <?php echo JHtml::_('grid.sort', 'ID', 'idOrder', $direction, $ordering); ?>                    
+                <th width="5">
+                    <?php echo JHtml::_('grid.sort', 'ID', 'idOrder', $direction, $ordering); ?>
                 </th>
                 <th width="20">
-                    <?php echo JText::_('Sel'); ?>                    
-                </th>			
-                <th>                    
-                    <?php echo JHtml::_('grid.sort', 'Número de orden', 'orderNum', $direction, $ordering); ?>  
+                    <?php echo JText::_('Sel'); ?>
                 </th>
-                <th>                    
-                    <?php echo JHtml::_('grid.sort', 'Cliente', 'idCustomer', $direction, $ordering); ?>  
-                </th>                
-                <th>                    
-                    <?php echo JHtml::_('grid.sort', 'Fecha Orden', 'dateOrder', $direction, $ordering); ?>  
+                <th>
+                    <?php echo JHtml::_('grid.sort', 'Número de orden', 'orderNum', $direction, $ordering); ?>
                 </th>
-                <th width="80">                    
-                    <?php echo JHtml::_('grid.sort', 'Fecha Recepción', 'dateReceipt', $direction, $ordering); ?>  
+                <th>
+                    <?php echo JHtml::_('grid.sort', 'Cliente', 'idCustomer', $direction, $ordering); ?>
                 </th>
-                <th>                    
-                    <?php echo JHtml::_('grid.sort', 'Semanas', 'weeks', $direction, $ordering); ?>  
+                <th>
+                    <?php echo JHtml::_('grid.sort', 'Fecha Orden', 'dateOrder', $direction, $ordering); ?>
                 </th>
-                <th width="80">                    
-                    <?php echo JHtml::_('grid.sort', 'Fecha Estimada', 'dateEstimated', $direction, $ordering); ?>  
-                </th>                                
+                <th width="80">
+                    <?php echo JHtml::_('grid.sort', 'Fecha Recepción', 'dateReceipt', $direction, $ordering); ?>
+                </th>
+                <th>
+                    <?php echo JHtml::_('grid.sort', 'Semanas', 'weeks', $direction, $ordering); ?>
+                </th>
+                <th width="80">
+                    <?php echo JHtml::_('grid.sort', 'Fecha Estimada', 'dateEstimated', $direction, $ordering); ?>
+                </th>
             </tr>
         </thead>
-        <tbody>            
+        <tbody>
             <?php foreach ($this->items as $i => $item): ?>
-            
+
                 <tr class="row<?php echo $i % 2; ?>">
                     <td>
                         <?php echo $item->idOrder; ?>
@@ -79,29 +79,29 @@ $direction	= $this->escape($this->state->get('list.direction'));
                     </td>
                     <td class="center">
                         <?php echo date ("d/m/Y", strtotime($item->dateOrder)); ?>
-                    </td>                    
+                    </td>
                     <td class="center">
                         <?php echo date ("d/m/Y", strtotime($item->dateReceipt)); ?>
-                    </td>                    
+                    </td>
                     <td class="center">
                         <?php echo $item->weeks;?>
                     </td>
                     <td class="center">
                         <?php echo date ("d/m/Y", strtotime($item->dateEstimated)); ?>
-                    </td>                    
-                </tr>                
+                    </td>
+                </tr>
             <?php endforeach; ?>
-                         
+
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="8"><?php echo $this->pagination->getListFooter(); ?></td>
             </tr>
-        </tfoot>        			
+        </tfoot>
     </table>
-    <div>        
+    <div>
         <input type="hidden" name="task" value="" />
-        <input type="hidden" name="boxchecked" value="0" />        
+        <input type="hidden" name="boxchecked" value="0" />
         <input type="hidden" name="filter_order" value="<?php echo $ordering; ?>" />
         <input type="hidden" name="filter_order_Dir" value="<?php echo $direction; ?>" />
         <?php echo JHtml::_('form.token'); ?>

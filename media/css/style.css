@@ -1,0 +1,691 @@
+/*Inicio ListBox de usuarios en Notificaciones*/
+
+#contNotification{
+
+    display: block;    
+
+}
+
+#contNotification >div{
+
+    display: inline-block;
+
+    vertical-align: top;
+
+}
+
+.list{
+
+     background: none repeat scroll 0 0 #FFD86B;
+
+    color: #000000;
+
+}
+
+.userListBox{
+
+    width: 180px;
+
+    height: 230px;
+
+    background: #FFF;    
+
+    overflow: auto;
+
+    /*overflow-x: hidden;*/
+
+    border: 1px solid #9AA0A6;    
+
+    line-height: 20px;
+
+    color: #3B3B3B;
+
+    font-family: "Segoe UI",Arial,sans-serif;
+
+    font-size: 12px;
+
+    cursor: default;   
+
+    white-space: nowrap;
+
+    -moz-user-select: none;
+
+    -khtml-user-select: none;
+
+    -webkit-user-select: none;
+
+    -o-user-select: none;
+
+}
+
+#ul_transmitter,#ul_receptor{
+
+    padding: 0px;
+
+    margin: 0px;
+
+}
+
+#ul_transmitter,#ul_receptor, fieldset li{    
+
+    list-style: none;      
+
+    padding: 0 2px;
+
+}
+
+#ul_transmitter li:hover, #ul_receptor li:hover{        
+
+    background: none repeat scroll 0 0 #FFD86B;
+
+    color: #000000;    
+
+}
+
+#usersBox{
+
+    display: table;
+
+    width: 420px;
+
+}
+
+#usersBox div{
+
+    display: inline-block;
+
+    vertical-align: top;    
+
+}
+
+.userTitle{    
+
+    width: 182px;
+
+    padding: 2px 0;
+
+    text-align: center;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    background: #9AA0A6;
+
+}
+
+#toTitle{
+
+    margin-left: 23px;
+
+}
+
+#btnsBox{
+
+    padding: 0;
+
+    margin: 0 3px;
+
+    width: 20px;     
+
+}
+
+#btnNext,#btnBack{
+
+    height: 20px;
+
+    width: 20px;
+
+    /*background: #fff url('http://www.costcarilo.div-it.com.ar/public/images/flecha-der.png') no-repeat center;*/
+
+} 
+
+#empty_msn{
+
+    width: 182px;
+
+    margin-left: 208px;
+
+    text-align: center;
+
+}
+
+/*Fin ListBox de usuarios en Notificaciones*/
+
+
+
+/*Inicio Vista Info del componente*/
+
+.infoComp{
+
+    display: block;    
+
+}
+
+.infoComp div{
+
+    display: inline-block;
+
+    min-width: 150px;
+
+    height: 20px;
+
+    line-height: 20px;
+
+}
+
+.boxInfoComp{
+
+    background: #fff;
+
+    border: 1px solid #fff;
+
+    border-radius: 10px;
+
+    margin: 0;
+
+    padding: 0px;
+
+}
+
+.boxInfoComp .infoComp{
+
+    padding: 10px;
+
+}
+
+/*Fin Vista Info del componente*/
+
+
+
+/*Inicio Registro/edicion de pedidos*/
+
+.record_order{
+
+    width:43%;
+
+    display:inline;
+
+    vertical-align:top;
+
+}
+
+/*Fin registro de pagos*/
+
+
+
+/*Estilo reporte por fraccionamiento*/
+
+.boxResults{
+
+    display: block;
+
+}
+
+.boxResults div{
+
+    display: inline-block;
+
+    width: 21%;
+
+}
+
+.notesUllapoblana{
+
+    
+
+}
+
+.notesUllapoblana label{
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+.notesUllapoblana li{
+
+    /*list-style: none;*/
+
+    font-size: 12px;
+
+}
+
+/*estilos tabla estado de cuenta*/
+
+table.edo_cuenta {
+
+	border-collapse: collapse;
+
+	border-radius: 5px;
+
+	-webkit-border-radius: 5px;
+
+	border: 0;
+
+}
+
+table.edo_cuenta .encabezado {
+
+	background: #058;
+
+	color: #fff;
+
+	font-size: 18px;
+
+	line-height: normal;
+
+	font-weight: bold;
+
+	border: 0;
+
+}
+
+table.edo_cuenta td {
+
+	border: 1px solid #ccc;
+
+	padding: 5px;
+
+}
+
+table.edo_cuenta td.titulos {
+
+	background: #fc0;
+
+	border: 1px solid #fc0;
+
+	font-weight: bold;
+
+}
+
+table.edo_cuenta td.porpagar {
+
+font-size: 18px;
+
+font-weight: normal;
+
+background: #690;
+
+border: 1px solid #690;
+
+color: #fff;
+
+height: 40px;
+
+}
+
+table.edo_cuenta td.label {
+
+	background: #eee;
+
+	font-weight: bold;
+
+}
+
+
+
+a.art-button, a.art-button:link, a:link.art-button:link, body a.art-button:link, a.art-button:visited, body a.art-button:visited, input.art-button, button.art-button, .rsform-submit-button, .comments-link, .readmore-link, .mod-articles-category-readmore a, #rp_condos, #rp_ie {
+
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+	padding: 0 10px;
+
+	margin: 0 auto;
+
+	height: 24px;
+
+	border: 1px solid transparent;
+
+	text-decoration: none;
+
+	font-size: 13px;
+
+	font-family: Segoe UI, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+
+	font-weight: normal;
+
+	font-style: normal;
+
+	position: relative;
+
+	display: inline-block;
+
+	vertical-align: middle;
+
+	white-space: nowrap;
+
+	text-align: center;
+
+	color: #FFFFFF;
+
+	overflow: visible;
+
+	cursor: pointer;
+
+	text-indent: 0;
+
+	line-height: 24px;
+
+	background-color: #05C;
+
+	background-image: -ms-linear-gradient(top, #08C, #05C);
+
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#05C));
+
+	background-image: -webkit-linear-gradient(top, #08C, #05C);
+
+	background-image: -o-linear-gradient(top, #08C, #05C);
+
+	background-image: -moz-linear-gradient(top, #08C, #05C);
+
+	background-image: linear-gradient(top, #08C, #05C);
+
+	background-repeat: repeat-x;
+
+	border-color: #05C #05C #003580;
+
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+ filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
+
+ filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+	-webkit-border-radius: 3px;
+
+	-moz-border-radius: 3px;
+
+	border-radius: 3px;
+
+	outline:none;
+
+}
+
+.art-button.active, .art-button.active:hover, .comments-link:hover, .readmore-link:hover, .mod-articles-category-readmore a:active {
+
+	background: #A1ADBA;
+
+	background: rgba(161, 173, 186, 0.8);
+
+	border: 1px solid transparent;
+
+	padding: 0 10px;
+
+	margin: 0 auto;
+
+	text-decoration: none !important;
+
+	color: #FFFFFF !important;
+
+}
+
+.art-button.hover, .art-button:hover, .rsform-submit-button:hover, .comments-link:hover, .readmore-link:hover, .mod-articles-category-readmore a:hover {
+
+	background-color: #05C;
+
+	background-position: 0 -15px;
+
+	margin: 0 auto;
+
+	text-decoration: none !important;
+
+	color: #FFFFFF;
+
+	text-decoration: none !important;
+
+}
+
+
+
+#contbuttonTabs{
+
+    width: 35%;
+
+}
+
+#contbuttonTabs ul li{
+
+    display: inline-block;
+
+    height: 20px;
+
+    line-height: 20px;
+
+    padding: 8px;
+
+    color: #333;
+
+    background: #ccc;
+
+    font-weight: bold;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+}
+
+
+
+.selected_tab{
+
+    display: inline-block;
+
+    height: 20px;
+
+    line-height: 20px;
+
+    padding: 8px;
+
+	/*color: #fff !important;*/
+
+	/*background: #058 !important;*/
+
+    font-weight: bold;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+}
+
+#rp_condos, #rp_ie {
+
+	text-shadow:none;
+
+	transition:all ease-in-out .5s;
+
+}
+
+#contbuttonTabs ul li.selected_tab {
+
+	background: #069;
+
+	color:#fff;
+
+	transition:all ease-in-out .5s;
+
+}
+
+#contbuttonTabs ul li.selected_tab:first-child {
+
+	background: #690;
+
+	color:#fff;
+
+	transition:all ease-in-out .5s;
+
+}
+
+.defaultKCD .kcdTopHeader {
+
+background: #069 !important;
+
+border: 1px solid #069 !important;
+
+}
+
+.defaultKCD .kcdMain {
+
+border: solid 1px #ccc !important;
+
+background: #fff !important;
+
+}
+
+.defaultKCD .kcdMainTable {
+
+	background:#fff !important;
+
+}
+
+.defaultKCD .kcdColHeader {
+
+border-bottom: solid 1px #ccc !important;
+
+color: #690 !important;
+
+font-weight:bold !important;
+
+}
+
+.defaultKCD .kcdRowHeader {
+
+	color:#069 !important;
+
+}
+
+.defaultKCD .kcdMainTable {
+
+	border-collapse:collapse !important;
+
+}
+
+.defaultKCD .kcdDay {
+
+border: 1px solid #eee !important;
+
+}
+
+.defaultKCD .kcdMainTable .kcdSelected {
+
+	background:#069 !important;
+
+}
+
+.defaultKCD .kcdMainTable .kcdSelected a {
+
+border-color: #058 !important;
+
+}
+
+.defaultKCD .kcdOver {
+
+	background: #f90 !important;
+
+	border:1px solid #f90 !important;
+
+}
+
+.defaultKGR .kgrTableView {
+
+	border: 0 !important;
+
+}
+
+.defaultKGR .kgrHeader {
+
+background: #069 !important;
+
+border: 1px solid #069 !important;
+
+height: 30px !important;
+
+}
+
+.defaultKGR .kgrSortHeaderText{
+
+color: #fff !important;
+
+}
+
+.defaultKGR .kgrHeader .kgrIn{
+
+color: #fff !important;
+
+}
+
+.defaultKGR .kgrPager {
+
+background: #690 !important;
+
+line-height: 20px !important;
+
+border-bottom: 1px solid #690 !important;
+
+border-top: 1px solid #690 !important;
+
+color: #fff !important;
+
+}
+
+
+
+#msg_select_reports{
+
+    text-align: center; 
+
+    margin-right: 30px; 
+
+}
+
+
+/*ajustes comwrapper*/
+.comwrapper .icon-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0;
+    height: auto;
+}
+.comwrapper .icon-wrapper a {
+    display: block;
+    padding: 2% 4%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+}
+.comwrapper .icon-wrapper a:hover {
+    background: #eee;
+}
+.comwrapper .icon-wrapper a img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    margin-right: 2%;
+    max-width: 48px;
+}
+.comwrapper .icon-wrapper a span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65%;
+}
+/*terminan ajustes comwrapper*/
