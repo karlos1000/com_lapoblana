@@ -80,15 +80,17 @@ class LapoblanaControllerMassive extends JControllerForm {
                                                            "client"=>$CollB,                                                         
                                                             );                                                                                                                            
                         }
-                        
-                        //comprueba que si la orden existe 
-                        $existOrder = $modelGM->chekExistOrder($CollA); 
-                        if($existOrder==1){                            
-                            $modelGM->delDetailsOrderAndOrder($CollA); //elimina la orden ya existente con sus detalles
-                            $arrayReplace[] = $CollA;
-                        }                        
-                    } 
-                                                            
+
+                        //comprueba que si la orden existe
+                        if($CollA!=""){
+                          $existOrder = $modelGM->chekExistOrder($CollA);
+                          if($existOrder==1){
+                              $modelGM->delDetailsOrderAndOrder($CollA); //elimina la orden ya existente con sus detalles
+                              $arrayReplace[] = $CollA;
+                          }
+                        }
+                    }
+
                     //almacena en db los numeros de orden y si existen hace un borrado de la orden y los detalles de la orden antigua
                     foreach ($arrReadOrder as $itemOrd){
                         //comprueba que el nombre del dibujo ya se encuentre en el sistema

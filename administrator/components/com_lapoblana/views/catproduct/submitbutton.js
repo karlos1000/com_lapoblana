@@ -54,6 +54,10 @@ Joomla.submitbutton = function(task)
  
                 if (isValid)
                 {
+                    if(action[1]=="cancel"){
+                        quitarClases();
+                    }
+
                         Joomla.submitform(task);
                         return true;
                 }
@@ -65,3 +69,10 @@ Joomla.submitbutton = function(task)
 }
 
 
+function quitarClases(){
+    var controles = ['input'];
+    JQ(controles).each(function(index, val){
+        JQ(val).removeClass('required');
+        JQ(val).removeAttr("required");
+    });
+}

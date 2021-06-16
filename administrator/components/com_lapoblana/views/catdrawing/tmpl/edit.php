@@ -25,18 +25,33 @@ $dateCreation = (isset($this->data[0]->dateCreation))?$this->data[0]->dateCreati
     padding: 0 5px 0 0; 
 }    
 </style>
-<form class="form-validate" action="<?php echo JRoute::_('index.php?option=com_lapoblana&task=catdrawing'); ?>" method="post" name="adminForm" id="adminForm">    
+<form class="form-validate form-horizontal" action="<?php echo JRoute::_('index.php?option=com_lapoblana&task=catdrawing'); ?>" method="post" name="adminForm" id="adminForm">
     <div style="">
-        <fieldset class="adminform">                        
-            <div>
+        <fieldset class="adminform">
+            <div class="control-group">
+                <div class="control-label">
+                    <label for="drawingName">Nombre de dibujo: <span class="star">&nbsp;*</span></label>
+                </div>
+                <div class="controls">
+                    <input type="text" name="drawingName" id="drawingName" value="<?php echo $drawingName; ?>" class="required" />
+                </div>
+            </div>
+            <!-- <div>
                 <label for="drawingName">Nombre de dibujo: <span class="star">&nbsp;*</span></label>
-                <input type="text" name="drawingName" id="drawingName" value="<?php echo $drawingName; ?>" class="required" />                        
-            </div>                                        
-            
-            <div>
-                <label for="active">Activo:</label>                                
-                <input type="checkbox" name="active" id="active" value="<?php echo $active; ?>" <?php echo ($active==1)?'checked':''; ?> />                                       
-            </div>                               
+                <input type="text" name="drawingName" id="drawingName" value="<?php echo $drawingName; ?>" class="required" />
+            </div> -->
+            <div class="control-group">
+                <div class="control-label">
+                    <label for="active">Activo:</label>
+                </div>
+                <div class="controls">
+                    <input type="checkbox" name="active" id="active" value="<?php echo $active; ?>" <?php echo ($active==1)?'checked':''; ?> />
+                </div>
+            </div>
+            <!-- <div>
+                <label for="active">Activo:</label>
+                <input type="checkbox" name="active" id="active" value="<?php echo $active; ?>" <?php echo ($active==1)?'checked':''; ?> />
+            </div> -->
         </fieldset>
     </div> 
         

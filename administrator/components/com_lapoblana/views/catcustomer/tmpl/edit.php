@@ -28,7 +28,7 @@ $username = (isset($this->data[0]->username))?$this->data[0]->username:'';
     padding: 0 5px 0 0; 
 }    
 </style>
-<form class="form-validate" action="<?php echo JRoute::_('index.php?option=com_lapoblana&task=catcustomer'); ?>" method="post" name="adminForm" id="adminForm">    
+<form class="form-validate form-horizontal" action="<?php echo JRoute::_('index.php?option=com_lapoblana&task=catcustomer'); ?>" method="post" name="adminForm" id="adminForm">
     <div class="notesUllapoblana">
         <label>Para actualizar y crear nuevos usuarios de joomla siga los siguentes pasos:</label>
         <ul>
@@ -60,22 +60,37 @@ $username = (isset($this->data[0]->username))?$this->data[0]->username:'';
                     </li>                              
                 </ul>
             </div>
-            <div>
-                <label for="clientName">Nombre Cliente: <span class="star">&nbsp;*</span></label>
-                <input type="text" name="clientName" id="clientName" value="<?php echo $customerName; ?>" class="required"/>                        
+            <div class="control-group">
+                <div class="control-label">
+                    <label for="clientName">Nombre Cliente: <span class="star">&nbsp;*</span></label>
+                </div>
+                <div class="controls">
+                    <input type="text" name="clientName" id="clientName" value="<?php echo $customerName; ?>" class="required"/>
+                </div>
             </div>
-            
+            <!-- <div>
+                <label for="clientName">Nombre Cliente: <span class="star">&nbsp;*</span></label>
+                <input type="text" name="clientName" id="clientName" value="<?php echo $customerName; ?>" class="required"/>
+            </div> -->
+
             <!--
             <div>
                 <label for="lbUserName">Nombre usuario: <span class="star">&nbsp;*</span></label>
                 <input type="text" name="userName" id="userName" value="?php echo $username; ?>" class="required" readonly="readonly"/>                        
             </div>
             -->
-            
-            <div>
-                <label for="lbActive">Activo:</label>                                
-                <input type="checkbox" name="active" id="active" value="<?php echo $active; ?>" <?php echo ($active==1)?'checked':''; ?> />                                       
-            </div>                               
+            <div class="control-group">
+                <div class="control-label">
+                    <label for="lbActive">Activo:</label>
+                </div>
+                <div class="controls">
+                    <input type="checkbox" name="active" id="active" value="<?php echo $active; ?>" <?php echo ($active==1)?'checked':''; ?> />
+                </div>
+            </div>
+            <!-- <div>
+                <label for="lbActive">Activo:</label>
+                <input type="checkbox" name="active" id="active" value="<?php echo $active; ?>" <?php echo ($active==1)?'checked':''; ?> />
+            </div> -->
         </fieldset>
     </div> 
         

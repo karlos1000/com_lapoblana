@@ -107,12 +107,15 @@ JViewLegacy::loadHelper('lapoblanahp');
                         <label for="no_order">No. de pedido: <span class="star">&nbsp;*</span></label>
                         <input type="text" name="no_order" id="no_order" value="<?php echo $orderNum; ?>" class="required validate-numeric" <?php echo ($orderNum!='')? "readonly='readonly'": '';  ?> />                        
                     </div>                                                            
-                    <div style="clear: both;">
+                    <!-- <div style="clear: both;"> -->
+                    <div>
                         <label for="dateKool">Fecha Orden:</label>                                     
                         <?php echo $calO->Render();?>
                     </div>
-                    <div style="clear: both;">
-                        <label for="dateKool">Fecha Recepción:</label>                                     
+                    <br><br>
+                    <!-- <div style="clear: both;"> -->
+                    <div>
+                        <label for="dateKool">Fecha Recepción:</label>
                         <?php echo $calR->Render();?>
                     </div>                                        
                 </fieldset>
@@ -129,6 +132,7 @@ JViewLegacy::loadHelper('lapoblanahp');
                     </div>
                 </fieldset>
             </div> 
+            <br><br>
     
             <div id="kool_Grid">
                 <?php            
@@ -145,3 +149,10 @@ JViewLegacy::loadHelper('lapoblanahp');
             <input type="hidden" id="idOrder" value="<?php echo $idOrder; ?>"/>           
             <?php echo JHtml::_('form.token'); ?>
         </form>
+
+
+<style>
+#productsOrderGrid_mt_nr_productsOrderGrid_mt_c12_input_bound{
+    width: 20% !important;
+}
+</style>

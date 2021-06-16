@@ -133,6 +133,7 @@ Joomla.submitbutton = function(task)
                         }                                                                                    
                         return false;
                     }else{
+                        quitarClases();
                         Joomla.submitform(task);
                         return true;                        
                     }
@@ -170,4 +171,12 @@ function retornExistRows()
         }
         
         return check;
+}
+
+function quitarClases(){
+    var controles = ['input'];
+    JQ(controles).each(function(index, val){
+        JQ(val).removeClass('required');
+        JQ(val).removeAttr("required");
+    });
 }

@@ -108,7 +108,7 @@ class LapoblanaControllerOrder extends JControllerForm {
          echo $html;            
     }
     
-    function deleteOrderByOrderID($idO){
+    function deleteOrderByOrderID($idO=0){
         $idO = $_POST['orderId'];
         
         //leer el modelo correspondiente        
